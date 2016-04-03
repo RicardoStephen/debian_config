@@ -20,6 +20,6 @@ fi
 
 # create symbolic links
 ln -sb ~/dotfiles/.bash_profile ~
-ln -sb ~/dotfiles/bashrc ~
-ln -sb ~/dotfiles/bash_aliases ~
-ln -sb ~/dotfiles/screenrc ~
+ln -sb ~/dotfiles/.bashrc ~
+ln -sb ~/dotfiles/.bash_aliases ~
+ln -sb ~/dotfiles/.screenrc ~
