@@ -1,12 +1,8 @@
 # create .trash if required
-if [ ! -d "~/.trash" ]; then
-    mkdir ~/.trash
-fi
+mkdir -p ~/.trash
 
 # create ./old
-if [ ! -d "./old" ]; then
-    mkdir old
-fi
+mkdir -p ./old
 
 # move old config files to ./old
 if [ -e "~/.bash_profile" ]; then
