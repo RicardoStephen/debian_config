@@ -9,6 +9,9 @@ if [ ! -d "./old" ]; then
 fi
 
 # move old config files to ./old
+if [ -e "~/.bash_profile" ]; then
+    mv ~/.bash_profile ./old
+fi
 if [ -e "~/.bashrc" ]; then
     mv ~/.bashrc ./old
 fi
@@ -20,6 +23,7 @@ if [ -e "~/.screenrc" ]; then
 fi
 
 # create symbolic links
-ln -sb ./bashrc ~
-ln -sb ./bash_aliases ~
-ln -sb ./screenrc ~
+ln -sb ~/dotfiles/.bash_profile ~
+ln -sb ~/dotfiles/bashrc ~
+ln -sb ~/dotfiles/bash_aliases ~
+ln -sb ~/dotfiles/screenrc ~
