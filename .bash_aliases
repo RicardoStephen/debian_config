@@ -24,7 +24,6 @@ alias ll="ls -alhH --color=auto"
 alias lsd="ls -l --color=auto | grep --color=never '^d'"
 
 # Safety
-alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
 set -o noclobber
