@@ -1,7 +1,7 @@
 linux_dotfiles
 ==============
 Run the following commands on a Linux machine to configure the bash
-and screen environments.
+and screen environments:
 
 ```sh
 cd $HOME
