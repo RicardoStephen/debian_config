@@ -4,7 +4,6 @@ alias m="less"
 alias g="git"
 alias du="du -ch --max-depth=1"
 alias treeacl="tree -A -C -L 2"
-alias stat="stat -x"
 
 # Trash system
 t() { mv "$@" ~/.trash/; }
