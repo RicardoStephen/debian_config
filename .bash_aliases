@@ -1,9 +1,13 @@
 # Miscellaneous shortcuts
 alias md="mkdir"
 alias m="less"
-alias g="git"
 alias du="du -ch --max-depth=1"
 alias treeacl="tree -A -C -L 2"
+
+# git shortcuts
+alias gac="git add -u && git commit -m"
+alias s="git status"
+alias p="git push origin master"
 
 # Trash system
 t() { mv "$@" ~/.trash/; }
