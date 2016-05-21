@@ -17,9 +17,13 @@ fi
 if [ -e "~/.screenrc" ]; then
     mv ~/.screenrc ./old
 fi
+if [ -e "~/.emacs.d" ]; then
+    mv ~/.emacs.d ./old
+fi
 
 # create symbolic links
 ln -sb ~/dotfiles/.bash_profile ~
 ln -sb ~/dotfiles/.bashrc ~
 ln -sb ~/dotfiles/.bash_aliases ~
 ln -sb ~/dotfiles/.screenrc ~
+ln -sb ~/dotfiles/.emacs.d ~
