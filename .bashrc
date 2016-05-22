@@ -1,9 +1,13 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# set a fancy prompt (non-color, unless we know we "want" color)
+case $TERM in
+    xtem-color|*-256color) color_prompt=yes;;
+esac
+
 # Set umask
 # Test if currently local or server:
-#     if [ "`id -gn`" == "`id -un`" -a `id -u` -gt 99 ]; then echo "local"; else echo "server"; fi
 if [ "`id -gn`" == "`id -un`" -a `id -u` -gt 99 ]; then
 		# local machine
 		umask 002
@@ -63,6 +67,9 @@ fi
 # Append to history
 # http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 shopt -s histappend
+
+# Make less more friendly for non-text input files
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Make prompt informative
 # http://www.ukuug.org/events/linux2003/papers/bash_tips/

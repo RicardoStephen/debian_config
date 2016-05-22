@@ -5,6 +5,7 @@ alias du="du -ch --max-depth=1"
 alias treeacl="tree -A -C -L 2"
 
 # git shortcuts
+alias ga="git add"
 alias gac="git add -u && git commit -m"
 alias s="git status"
 alias p="git push origin master"
