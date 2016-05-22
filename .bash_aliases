@@ -8,7 +8,8 @@ alias treeacl="tree -A -C -L 2"
 alias ga="git add"
 alias gac="git add -u && git commit -m"
 alias gst="git status"
-alias gp="git push origin master"
+alias gpl="git pull origin master"
+alias gps="git push origin master"
 
 # Trash system
 t() { mv "$@" ~/.trash/; }
