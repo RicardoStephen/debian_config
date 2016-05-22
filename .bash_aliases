@@ -7,8 +7,8 @@ alias treeacl="tree -A -C -L 2"
 # git shortcuts
 alias ga="git add"
 alias gac="git add -u && git commit -m"
-alias s="git status"
-alias p="git push origin master"
+alias gst="git status"
+alias gp="git push origin master"
 
 # Trash system
 t() { mv "$@" ~/.trash/; }
