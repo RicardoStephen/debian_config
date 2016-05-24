@@ -34,7 +34,7 @@ alias cp="cp -i"
 set -o noclobber
 
 # Editor
-alias e='emacs'
+alias e='emacs -nw'
 alias em='emacs -nw'
 alias eqq='emacs -nw -Q'
 export EDITOR='emacs -nw'
