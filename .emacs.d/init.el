@@ -56,14 +56,14 @@
 (require 'neotree)
 
 ;; assembler mode configuration
-(require 'asm-mode)
-(add-hook 'asm-mode-hook (lambda ()
-                           (electric-indent-mode -1)
-                           (setq tab-stop-list (number-sequence 10 85 6))
-                           ; modified from (define-key text-mode-map (kbd "TAB") 'tab-to-tab-stop)
-                           (define-key asm-mode-map (kbd "TAB") 'tab-to-tab-stop)
-                           (setq indent-tabs-mode nil)
-                           ))
+;; (require 'asm-mode)
+;; (add-hook 'asm-mode-hook (lambda ()
+;;                            (electric-indent-mode -1)
+;;                            (setq tab-stop-list (number-sequence 10 85 6))
+;;                            ; modified from (define-key text-mode-map (kbd "TAB") 'tab-to-tab-stop)
+;;                            (define-key asm-mode-map (kbd "TAB") 'tab-to-tab-stop)
+;;                            (setq indent-tabs-mode nil)
+;;                            ))
 
 ;; verilog configuration
 (setq verilog-indent-level 2
@@ -95,7 +95,7 @@
  '(highlight ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
  '(italic ((t (:foreground "white" :slant italic))))
- '(linum ((t (:foreground "blue" :weight normal))))
+ '(linum ((t (:foreground "green" :weight normal))))
  '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
  '(show-paren-match ((((class color) (background light)) (:background "black"))))
@@ -105,7 +105,6 @@
 ;; -- Macros --
 ;; ------------
 (load "defuns-config.el")
-;;(fset 'align-equals "\C-[xalign-regex\C-m=\C-m")
 (global-set-key "\M-=" 'align-equals)
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 (global-set-key "\C-c;" 'comment-or-uncomment-region)
