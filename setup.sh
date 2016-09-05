@@ -12,5 +12,5 @@ do
     # move old config files to ./old
     mv ~/$f ./old
     # create symbolic link to the new config file
-    ln -sb ~/dotfiles/$f ~
+    ln -sb ~/debian_config/$f ~
 done
