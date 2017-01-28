@@ -7,8 +7,11 @@ mkdir -p ~/.trash
 # create ./old
 mkdir -p $DIR/old
 
+# customization file
+touch .custom
+
 # config files
-files=(.bash_profile .bashrc .bash_aliases .screenrc .emacs.d)
+files=(.bash_profile .bashrc .bash_aliases .screenrc .emacs.d .custom)
 
 for f in "${files[@]}"
 do
