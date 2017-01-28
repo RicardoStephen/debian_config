@@ -80,7 +80,7 @@ PS1="\[\e[36m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] \[\e[35m\]\w\[\
 
 # Setup color settings Generate colors in 
 # http://geoff.greer.fm/lscolors/
-export LS_COLORS="di=1;35;40:ln=36;40:so=32;40:pi=33;40:ex=1;31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+export LS_COLORS="di=1;35:ln=36:so=32:pi=33:ex=1;31:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
 
 # Ensures cross-platform sorting behavior of GNU sort. 
 # http://www.gnu.org/software/coreutils/faq/coreutils-faq.html#Sort-does-not-sort-in-normal-order_0021
