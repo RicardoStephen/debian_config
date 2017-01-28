@@ -89,5 +89,11 @@ export LC_ALL=POSIX
 
 # Bash aliases
 if [ -f ~/.bash_aliases ]; then
-	  source ~/.bash_aliases
+  source ~/.bash_aliases
 fi
+
+# Custom config
+if [ -f ~/.custom ]; then
+  source ~/.custom
+fi  
+
