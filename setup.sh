@@ -11,7 +11,8 @@ mkdir -p $DIR/old
 touch .custom
 
 # config files
-files=(.bash_profile .bashrc .bash_aliases .screenrc .emacs.d .custom)
+# files=(.bash_profile .bashrc .bash_aliases .screenrc .emacs.d .custom)
+files=(.bash_profile .bashrc .bash_aliases .screenrc .custom)
 
 for f in "${files[@]}"
 do
