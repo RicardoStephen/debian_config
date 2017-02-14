@@ -12,7 +12,7 @@ touch .custom
 
 # config files
 # files=(.bash_profile .bashrc .bash_aliases .screenrc .emacs.d .custom)
-files=(.bash_profile .bashrc .bash_aliases .screenrc .custom)
+files=(.bash_aliases .screenrc)
 
 for f in "${files[@]}"
 do
